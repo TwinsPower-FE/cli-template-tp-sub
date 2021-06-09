@@ -1,0 +1,52 @@
+@import './common.less';
+.SubPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f7f7fc;
+}
+.Menus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 190px;
+  padding: 28px 0 0 28px;
+  .MenusTitle {
+    line-height: 22px;
+    font-size: 18px;
+    margin: 0 0 35px 0;
+    font-weight: 400;
+  }
+  .MenusItem {
+    margin: 0 0 35px 0;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+  .Actived {
+    color: @primary-color;
+  }
+}
+.Breads {
+  position: absolute;
+  top: 30px;
+  left: 190px;
+  right: 0;
+  padding: 0 0 0 28px;
+}
+.SubPageContainer {
+  position: absolute;
+  left: 190px;
+  top: 60px;
+  bottom: 30px;
+  right: 30px;
+  // min-width: 1000px;
+  background: #fff;
+  overflow: auto;
+  border-radius: 8px;
+}
